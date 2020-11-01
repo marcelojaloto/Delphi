@@ -44,6 +44,12 @@ uses
 
 {$R *.res}
 
+function GetPort: Integer;
+const
+  DEFAULT_SERVER_API_PORT = 8088;
+begin
+  Result := StrToIntDef(ParamStr(2), DEFAULT_SERVER_API_PORT);
+end;
 
 procedure RunServer(pPort: Integer);
 var
@@ -76,7 +82,7 @@ begin
   Writeln(' ' + ExtractFilePath(ParamStr(0)) + 'www\api\help');
   Writeln(' ');
   Writeln(' Command to starts in other server API port:');
-  Writeln(' ' + ExtractFileName(ParamStr(0)) + ' start 8088');
+  Writeln(' ' + ExtractFileName(ParamStr(0)) + ' start ' + GetPort.ToString);
   Writeln('**********************************************************************************');
 
   LCmd := 'start';
@@ -149,13 +155,6 @@ begin
   finally
     LServer.Free;
   end;
-end;
-
-function GetPort: Integer;
-const
-  DEFAULT_SERVER_API_PORT = 8088;
-begin
-  Result := StrToIntDef(ParamStr(2), DEFAULT_SERVER_API_PORT);
 end;
 
 begin
