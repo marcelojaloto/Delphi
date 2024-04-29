@@ -77,13 +77,21 @@ b) Server REST API
 - Compile the sources in Delphi (suggested 10.3) from the project "tasks_server.dpr"
 - In the "deploy\Win64" folder the executable "tasks_server.exe" will be generated
 - Make sure you have the "lib" folder with several DLLs for connecting to the PostgresSQL database;
-<IMAGE>
+
+![image](https://github.com/marcelojaloto/Delphi/assets/20048296/adb03111-3f22-467f-b45d-e62998a1612b)
+
+
 - Run the server and allow access to the Windows firewall;
 - If the database was configured correctly as instructed above, the server will be running locally at the address below:
 http://127.0.0.1:9000
-<IMAGE>
+
+![image](https://github.com/marcelojaloto/Delphi/assets/20048296/d517a642-5862-403f-a743-c5e380d34384)
+
 
 c) API documentation in Swagger
+
+![image](https://github.com/marcelojaloto/Delphi/assets/20048296/1ff526b8-5900-448e-b217-baf04b90aae4)
+
 
 - With an operational server, access the address below:
 http://127.0.0.1:9000/api/help
@@ -92,13 +100,13 @@ http://127.0.0.1:9000/api/help
 - Click on the Authorize button and in the value field write bearer and paste the token as in the example below:
 bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUYXNrcyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTcxNjkyMzMyNn0.8Cr5XjBkrIy1bbfKy0d7zZDciw9fiLQjy Fd-g5nPIH4
 - Once authenticated, you can use the API services directly through the interactive documentation.
-<IMAGE>
 
 d) Client Tasks Manager:
 
 - Compile the sources in Delphi (suggested 10.3) from the project "tasks_client.dpr";
 - With the server operational, run the "tasks_client.exe" application.
 
-<IMAGE> 
+![image](https://github.com/marcelojaloto/Delphi/assets/20048296/b9c803a7-b61a-4c45-9344-541284a5a83a)
+
 
 
