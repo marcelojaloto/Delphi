@@ -29,7 +29,9 @@ inherited fmTasks: TfmTasks
         Top = 1
         Width = 440
         Height = 487
-        Hint = 'Lista de todas as tarefas'
+        Hint = 
+          'Lista de todas as tarefas. Na coluna de Status '#233' poss'#237'vel trocar' +
+          ' diretamente o status de cada tarefa.'
         Align = alClient
         DataSource = dsTasks
         Font.Charset = DEFAULT_CHARSET
