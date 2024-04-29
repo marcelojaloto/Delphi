@@ -31,6 +31,7 @@ f) Details:
 * Client: Development of VCL Client application in Delphi to consume services created in REST API Server.
 
 The application performs the following operations:
+
 a) Display the list of all tasks obtained from the service.
 
 b) Add a new task through the graphical interface.
@@ -65,7 +66,7 @@ https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 
 - Then run the script below in the "tasks" database:
 
-
+` 
 CREATE TABLE public.tasks
 (
 id uuid NOT NULL,
@@ -77,6 +78,7 @@ priority integer NOT NULL,
 end_date timestamp without time zone,
 CONSTRAINT tasks_pkey PRIMARY KEY (id)
 );
+` 
 
 ALTER TABLE IF EXISTS public.tasks
 OWNER to postgres;
