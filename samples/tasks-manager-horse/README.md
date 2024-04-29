@@ -67,8 +67,8 @@ https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 - Then run the script below in the "tasks" database:
 
 ` 
-CREATE TABLE public.tasks
-(
+CREATE TABLE public.tasks<br>
+(<br>
 id uuid NOT NULL,
 title character varying(100) NOT NULL,
 notes character varying(1000),
