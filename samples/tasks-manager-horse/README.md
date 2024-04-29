@@ -52,9 +52,11 @@ f) Details:
 a) Creation of the PostgreSQL database:
 
 - Download PostgreSQL from the address below for version 16.2 Windows 64 bits:
+  
 https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
 Or directly at the address below:
+
 https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 
 - Configure PostgreSQL:
