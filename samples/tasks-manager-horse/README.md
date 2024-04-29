@@ -116,11 +116,15 @@ c) API documentation in Swagger
 
 
 - With an operational server, access the address below:
+  
 http://127.0.0.1:9000/api/help
+
 - Authenticate using the admin username and admin password;
 - Copy the token code;
 - Click on the Authorize button and in the value field write bearer and paste the token as in the example below:
+
 bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUYXNrcyBBUEkiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTcxNjkyMzMyNn0.8Cr5XjBkrIy1bbfKy0d7zZDciw9fiLQjy Fd-g5nPIH4
+
 - Once authenticated, you can use the API services directly through the interactive documentation.
 
 d) Client Tasks Manager:
