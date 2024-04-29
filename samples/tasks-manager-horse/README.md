@@ -48,9 +48,9 @@ Or directly at the address below:
 https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 
 - Configure PostgreSQL:
-Port = 5432
-Username = postgres
-Password = postgres
+- Port = 5432
+- Username = postgres
+- Password = postgres
 
 - Create a database with the name "tasks"
 
@@ -58,18 +58,18 @@ Password = postgres
 
 CREATE TABLE public.tasks
 (
-     id uuid NOT NULL,
-     title character varying(100) NOT NULL,
-     notes character varying(1000),
-     created_date timestamp without time zone NOT NULL,
-     status integer NOT NULL,
-     priority integer NOT NULL,
-     end_date timestamp without time zone,
-     CONSTRAINT tasks_pkey PRIMARY KEY (id)
+id uuid NOT NULL,
+title character varying(100) NOT NULL,
+notes character varying(1000),
+created_date timestamp without time zone NOT NULL,
+status integer NOT NULL,
+priority integer NOT NULL,
+end_date timestamp without time zone,
+CONSTRAINT tasks_pkey PRIMARY KEY (id)
 );
 
 ALTER TABLE IF EXISTS public.tasks
-     OWNER to postgres;
+OWNER to postgres;
 	
 	
 b) Server REST API
