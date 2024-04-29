@@ -1,0 +1,20 @@
+{
+	"name": "tasks",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/gabrielbaltazar/gbswagger": "^3.0.7",
+		"github.com/hashload/handle-exception": "^0.1.9",
+		"github.com/hashload/horse": "^3.1.6",
+		"github.com/hashload/horse-cors": "^1.0.6",
+		"github.com/hashload/horse-jwt": "^2.0.14",
+		"github.com/hashload/jhonson": "^1.1.8",
+		"github.com/paolo-rossi/delphi-jose-jwt": "^v3.3.0",
+		"github.com/viniciussanchez/dataset-serialize": "^v2.5.9",
+		"github.com/viniciussanchez/dataset-serialize-adapter-restrequest4delphi": "^1.0.2",
+		"github.com/viniciussanchez/restrequest4delphi": "^v4.0.15"
+	}
+}
