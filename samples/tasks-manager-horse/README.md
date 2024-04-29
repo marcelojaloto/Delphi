@@ -9,15 +9,15 @@ The task manager aims to create a REST server using the Horse framework to provi
 
 * REST API Server: Development of a service to manage information about tasks. The service must offer the following functionalities:
 
-- a) Consult and return the list of all tasks.
+a) Consult and return the list of all tasks.
 
-- b) Add a new task.
+b) Add a new task.
 
-- c) Update the status of a task.
+c) Update the status of a task.
 
-- d) Remove a task.
+d) Remove a task.
 
-- e) PostgreSQL Database for storing task data and for SQL queries in the service to calculate and return:
+e) PostgreSQL Database for storing task data and for SQL queries in the service to calculate and return:
 - The total number of tasks.
 - The average priority of pending tasks.
 - The number of tasks completed in the last 7 days.
@@ -31,17 +31,17 @@ f) Details:
 * Client: Development of VCL Client application in Delphi to consume services created in REST API Server.
 
 The application performs the following operations:
-- a) Display the list of all tasks obtained from the service.
+a) Display the list of all tasks obtained from the service.
 
-- b) Add a new task through the graphical interface.
+b) Add a new task through the graphical interface.
 
-- c) Update the status of a task.
+c) Update the status of a task.
 
-- d) Remove a task.
+d) Remove a task.
 
-- e) Implement visualization of statistics of SQL queries performed on the server.
+e) Implement visualization of statistics of SQL queries performed on the server.
 
-- f) Details:
+f) Details:
 - The client application interacts exclusively with the service to perform the mentioned operations, without local data persistence.
 - Used the RESTRequest4Deplhi library to make calls to the service.
 - Friendly and intuitive graphical interface.
