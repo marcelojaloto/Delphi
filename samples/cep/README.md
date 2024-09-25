@@ -2,6 +2,10 @@
 
 Este exemplo tem por objetivo principal criar um componente Delphi 12.1 CE (Firemonkey/FMX) para realizar integração com a API pública ViaCEP e realizar buscas por CEP ou por endereço para obter os dados de um endereço completo de localidade do Brasil.
 
+![image](https://github.com/user-attachments/assets/fd799d2c-749f-48b7-bfc8-bc53ca3d9a1e)
+
+
+
 [![PayPal donate button](https://user-images.githubusercontent.com/26885358/62580349-60bd8780-b87c-11e9-901e-425cf2a83671.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AW8TZ2QTDA7K8)
 
 ## Requisitos técnicos:
@@ -13,7 +17,7 @@ Este exemplo tem por objetivo principal criar um componente Delphi 12.1 CE (Fire
 5. Utilização de Clean Code;
 6. Utilização de SOLID;
 7. Utilização de Programação Orientada a Objetos;
-8. Serialização e desserialização de objetos JSON;
+8. Serialização e desserialização de objetos JSON e XML;
 9. Utilização de Interfaces;
 10. Aplicação de Patterns MVC, padrões de projeto (GoF);
 11. Criação de Componentes Delphi FMX;
@@ -39,16 +43,18 @@ https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 
 - Crie um banco de dados com o nome "cep"
 
+´´´
 CREATE DATABASE cep
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
-
+´´´
 
 - Em seguida, execute o script abaixo no banco de dados "cep":
 
+´´´
 CREATE TABLE public.enderecos
 (
     codigo uuid NOT NULL,
@@ -64,21 +70,23 @@ CREATE TABLE public.enderecos
 
 ALTER TABLE IF EXISTS public.enderecos
     OWNER to postgres;
-
+´´´
 
 b) Confira se está na pasta de deploy as DLLs necessárias para acesso ao banco de dados Postgre SQL
 
 - \Output\Deploy\Win64\postgresql\lib
 
+![image](https://github.com/user-attachments/assets/b5c8cec8-c383-4735-8892-dd43cf1c45b3)
 
 	
 c) Confira se está na pasta de deploy as DLLs necessárias para uso do protocolo SSL	
 
 - .\Output\Deploy\Win64\
 
+´´´
 libeay32.dll
 ssleay32.dll
-
+´´´
 	
 d) Instalação do componente TCEP
 
