@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6DC4D8F0-8362-445F-985B-B36C21D49B7C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Sources\Modules\CEP\Jaloto_CEP_ComponenteRT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Sources\Modules\CEP\Jaloto_CEP_ComponenteDT.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Sources\Samples\JalotoBuscadorCEP.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Jaloto_CEP_ComponenteRT">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteRT.dproj"/>
+    </Target>
+    <Target Name="Jaloto_CEP_ComponenteRT:Clean">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteRT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Jaloto_CEP_ComponenteRT:Make">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteRT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Jaloto_CEP_ComponenteDT">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteDT.dproj"/>
+    </Target>
+    <Target Name="Jaloto_CEP_ComponenteDT:Clean">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteDT.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Jaloto_CEP_ComponenteDT:Make">
+        <MSBuild Projects="Sources\Modules\CEP\Jaloto_CEP_ComponenteDT.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="JalotoBuscadorCEP">
+        <MSBuild Projects="Sources\Samples\JalotoBuscadorCEP.dproj"/>
+    </Target>
+    <Target Name="JalotoBuscadorCEP:Clean">
+        <MSBuild Projects="Sources\Samples\JalotoBuscadorCEP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JalotoBuscadorCEP:Make">
+        <MSBuild Projects="Sources\Samples\JalotoBuscadorCEP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Jaloto_CEP_ComponenteRT;Jaloto_CEP_ComponenteDT;JalotoBuscadorCEP"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Jaloto_CEP_ComponenteRT:Clean;Jaloto_CEP_ComponenteDT:Clean;JalotoBuscadorCEP:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Jaloto_CEP_ComponenteRT:Make;Jaloto_CEP_ComponenteDT:Make;JalotoBuscadorCEP:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

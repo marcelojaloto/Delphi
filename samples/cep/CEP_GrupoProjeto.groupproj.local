@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/09/21 10:45:36.000.628,H:\Projetos\Lições Aprendidas\Desenvolvimento\Delphi\CEP\ViaCep\CepGrupoProjeto.groupproj=C:\Users\marce\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2024/09/21 10:46:06.000.086,H:\Projetos\Lições Aprendidas\Desenvolvimento\Delphi\CEP\ViaCep\CEP_GrupoProjeto.groupproj=H:\Projetos\Lições Aprendidas\Desenvolvimento\Delphi\CEP\ViaCep\CepGrupoProjeto.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\DELPHI\github\Delphi\samples\cep\Sources\Samples\JalotoBuscadorCEP.dproj"/>
+	</Default.Personality>
+</BorlandProject>

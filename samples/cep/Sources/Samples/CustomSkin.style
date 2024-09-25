@@ -1,0 +1,2008 @@
+object TStyleContainer
+  object TLayout
+    StyleName = 'Grid1Style1'
+    Align = Center
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 76
+    object TBrushObject
+      StyleName = 'AlternatingRowBackground'
+      Brush.Color = xFFEEEEEE
+    end
+    object TBrushObject
+      StyleName = 'EditorBackground'
+    end
+    object TBrushObject
+      StyleName = 'EditorLineFill'
+      Brush.Color = xFF2A96FF
+    end
+    object TBrushObject
+      StyleName = 'linefill'
+      Brush.Color = xFFF0F0F0
+    end
+    object TStyleObject
+      StyleName = 'background'
+      Align = Contents
+      Locked = True
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 612.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      SourceLink = <
+        item
+          CapInsets.Left = 10.000000000000000000
+          CapInsets.Top = 10.000000000000000000
+          CapInsets.Right = 10.000000000000000000
+          CapInsets.Bottom = 10.000000000000000000
+          SourceRect.Left = 329.000000000000000000
+          SourceRect.Top = 530.000000000000000000
+          SourceRect.Right = 400.000000000000000000
+          SourceRect.Bottom = 600.000000000000000000
+        end
+        item
+          CapInsets.Left = 15.000000000000000000
+          CapInsets.Top = 15.000000000000000000
+          CapInsets.Right = 15.000000000000000000
+          CapInsets.Bottom = 15.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 479.000000000000000000
+          SourceRect.Top = 523.000000000000000000
+          SourceRect.Right = 586.000000000000000000
+          SourceRect.Bottom = 628.000000000000000000
+        end
+        item
+          CapInsets.Left = 20.000000000000000000
+          CapInsets.Top = 20.000000000000000000
+          CapInsets.Right = 20.000000000000000000
+          CapInsets.Bottom = 20.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 624.000000000000000000
+          SourceRect.Top = 695.000000000000000000
+          SourceRect.Right = 766.000000000000000000
+          SourceRect.Bottom = 835.000000000000000000
+        end>
+      Opaque = True
+      object THeader
+        StyleName = 'header'
+        Sides = [Top, Left, Bottom, Right]
+        Align = Top
+        Position.X = 2.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 608.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object TLayout
+        StyleName = 'content'
+        Align = Client
+        ClipChildren = True
+        Size.Width = 592.000000000000000000
+        Size.Height = 111.000000000000000000
+        Size.PlatformDefault = False
+        object TRectangle
+          StyleName = 'selection'
+          Fill.Color = x7F2A96FF
+          HitTest = False
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object TRectangle
+          StyleName = 'focus'
+          Fill.Color = xFF2A96FF
+          HitTest = False
+          Margins.Top = 1.000000000000000000
+          Margins.Bottom = 1.000000000000000000
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = Right
+        SmallChange = 0.000000000000000000
+        Orientation = Vertical
+        Position.X = 594.000000000000000000
+        Position.Y = 23.000000000000000000
+        Size.Width = 16.000000000000000000
+        Size.Height = 111.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Grid1Style1ScrollBarStyle1'
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = Bottom
+        SmallChange = 0.000000000000000000
+        Orientation = Horizontal
+        Position.X = 2.000000000000000000
+        Position.Y = 134.000000000000000000
+        Size.Width = 608.000000000000000000
+        Size.Height = 16.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object TLayout
+        Align = Client
+        Size.Width = 592.000000000000000000
+        Size.Height = 111.000000000000000000
+        Size.PlatformDefault = False
+        object TSmallScrollBar
+          StyleName = 'vsmallscrollbar'
+          Align = Right
+          SmallChange = 0.000000000000000000
+          Orientation = Vertical
+          Margins.Left = 2.000000000000000000
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'Grid1Style1SmallScrollBarStyle1'
+          Visible = False
+        end
+        object TSmallScrollBar
+          StyleName = 'hsmallscrollbar'
+          Align = Bottom
+          SmallChange = 0.000000000000000000
+          Orientation = Horizontal
+          Margins.Top = 2.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          Visible = False
+        end
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'headerLastItemStyle1'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 78
+    object TButtonStyleObject
+      StyleName = 'background'
+      Align = Contents
+      Locked = True
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 612.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      HotLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 468.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 506.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 624.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 674.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 424.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 462.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 566.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 616.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      NormalLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 424.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 462.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 566.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 616.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      PressedLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 340.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 365.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 510.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 548.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 680.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 730.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 604.000000000000000000
+      Size.Height = 148.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = Character
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'Grid1Style1headerLastItemStyle11'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 77
+    object TButtonStyleObject
+      StyleName = 'background'
+      Align = Contents
+      Locked = True
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 612.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      HotLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 468.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 506.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 624.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 674.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 424.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 462.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 566.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 616.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      NormalLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 308.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 424.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 462.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 566.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 616.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      PressedLink = <
+        item
+          CapInsets.Left = 2.000000000000000000
+          CapInsets.Top = 2.000000000000000000
+          CapInsets.Right = 2.000000000000000000
+          CapInsets.Bottom = 2.000000000000000000
+          SourceRect.Left = 340.000000000000000000
+          SourceRect.Top = 318.000000000000000000
+          SourceRect.Right = 365.000000000000000000
+          SourceRect.Bottom = 344.000000000000000000
+        end
+        item
+          CapInsets.Left = 3.000000000000000000
+          CapInsets.Top = 3.000000000000000000
+          CapInsets.Right = 3.000000000000000000
+          CapInsets.Bottom = 3.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 510.000000000000000000
+          SourceRect.Top = 477.000000000000000000
+          SourceRect.Right = 548.000000000000000000
+          SourceRect.Bottom = 516.000000000000000000
+        end
+        item
+          CapInsets.Left = 4.000000000000000000
+          CapInsets.Top = 4.000000000000000000
+          CapInsets.Right = 4.000000000000000000
+          CapInsets.Bottom = 4.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 680.000000000000000000
+          SourceRect.Top = 636.000000000000000000
+          SourceRect.Right = 730.000000000000000000
+          SourceRect.Bottom = 688.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 604.000000000000000000
+      Size.Height = 148.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Trimming = Character
+      TextSettings.WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'Grid1Style1ScrollBarStyle1'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 20
+    object TButton
+      StyleName = 'leftbutton'
+      Align = Left
+      Locked = True
+      Position.Y = 16.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarleftbutton'
+      TextSettings.Trimming = None
+    end
+    object TButton
+      StyleName = 'rightbutton'
+      Align = Right
+      Locked = True
+      Position.X = 596.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 16.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarrightbutton'
+      TextSettings.Trimming = None
+    end
+    object TButton
+      StyleName = 'topbutton'
+      Align = Top
+      Locked = True
+      Size.Width = 612.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbartopbutton'
+      TextSettings.Trimming = None
+    end
+    object TButton
+      StyleName = 'bottombutton'
+      Align = Bottom
+      Locked = True
+      Position.Y = 136.000000000000000000
+      Size.Width = 612.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarbottombutton'
+      TextSettings.Trimming = None
+    end
+    object TTrack
+      StyleName = 'htrack'
+      Align = Client
+      Locked = True
+      Orientation = Horizontal
+      Size.Width = 580.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarhtrackstyle'
+    end
+    object TTrack
+      StyleName = 'vtrack'
+      Align = Client
+      Locked = True
+      Orientation = Horizontal
+      Size.Width = 580.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarvtrackstyle'
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'vscrollbarscrollbarleftbutton1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 185.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 201.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 277.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 301.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 370.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 402.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 203.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 219.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 304.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 328.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 406.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 438.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+    object TButtonStyleObject
+      Align = Center
+      CapMode = Tile
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 9.000000000000000000
+      Size.Height = 11.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+      HotLink = <
+        item
+          SourceRect.Left = 198.000000000000000000
+          SourceRect.Top = 241.000000000000000000
+          SourceRect.Right = 207.000000000000000000
+          SourceRect.Bottom = 252.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 297.000000000000000000
+          SourceRect.Top = 362.000000000000000000
+          SourceRect.Right = 310.000000000000000000
+          SourceRect.Bottom = 378.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 395.000000000000000000
+          SourceRect.Top = 482.000000000000000000
+          SourceRect.Right = 413.000000000000000000
+          SourceRect.Bottom = 504.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          SourceRect.Left = 198.000000000000000000
+          SourceRect.Top = 241.000000000000000000
+          SourceRect.Right = 207.000000000000000000
+          SourceRect.Bottom = 252.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 297.000000000000000000
+          SourceRect.Top = 362.000000000000000000
+          SourceRect.Right = 310.000000000000000000
+          SourceRect.Bottom = 378.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 395.000000000000000000
+          SourceRect.Top = 482.000000000000000000
+          SourceRect.Right = 413.000000000000000000
+          SourceRect.Bottom = 504.000000000000000000
+        end>
+      NormalLink = <
+        item
+          SourceRect.Left = 198.000000000000000000
+          SourceRect.Top = 241.000000000000000000
+          SourceRect.Right = 207.000000000000000000
+          SourceRect.Bottom = 252.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 297.000000000000000000
+          SourceRect.Top = 362.000000000000000000
+          SourceRect.Right = 310.000000000000000000
+          SourceRect.Bottom = 378.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 395.000000000000000000
+          SourceRect.Top = 482.000000000000000000
+          SourceRect.Right = 413.000000000000000000
+          SourceRect.Bottom = 504.000000000000000000
+        end>
+      PressedLink = <
+        item
+          SourceRect.Left = 186.000000000000000000
+          SourceRect.Top = 241.000000000000000000
+          SourceRect.Right = 196.000000000000000000
+          SourceRect.Bottom = 252.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 279.000000000000000000
+          SourceRect.Top = 362.000000000000000000
+          SourceRect.Right = 292.000000000000000000
+          SourceRect.Bottom = 378.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 372.000000000000000000
+          SourceRect.Top = 482.000000000000000000
+          SourceRect.Right = 390.000000000000000000
+          SourceRect.Bottom = 504.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'vscrollbarscrollbarrightbutton1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 185.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 201.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 277.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 301.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 370.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 402.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 203.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 219.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 304.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 328.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 406.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 438.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+    object TButtonStyleObject
+      Align = Center
+      CapMode = Tile
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 9.000000000000000000
+      Size.Height = 11.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+      HotLink = <
+        item
+          SourceRect.Left = 201.000000000000000000
+          SourceRect.Top = 224.000000000000000000
+          SourceRect.Right = 210.000000000000000000
+          SourceRect.Bottom = 235.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 301.000000000000000000
+          SourceRect.Top = 335.000000000000000000
+          SourceRect.Right = 314.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 403.000000000000000000
+          SourceRect.Top = 448.000000000000000000
+          SourceRect.Right = 421.000000000000000000
+          SourceRect.Bottom = 470.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          SourceRect.Left = 201.000000000000000000
+          SourceRect.Top = 224.000000000000000000
+          SourceRect.Right = 210.000000000000000000
+          SourceRect.Bottom = 235.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 301.000000000000000000
+          SourceRect.Top = 335.000000000000000000
+          SourceRect.Right = 314.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 403.000000000000000000
+          SourceRect.Top = 448.000000000000000000
+          SourceRect.Right = 421.000000000000000000
+          SourceRect.Bottom = 470.000000000000000000
+        end>
+      NormalLink = <
+        item
+          SourceRect.Left = 201.000000000000000000
+          SourceRect.Top = 224.000000000000000000
+          SourceRect.Right = 210.000000000000000000
+          SourceRect.Bottom = 235.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 301.000000000000000000
+          SourceRect.Top = 335.000000000000000000
+          SourceRect.Right = 314.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 403.000000000000000000
+          SourceRect.Top = 448.000000000000000000
+          SourceRect.Right = 421.000000000000000000
+          SourceRect.Bottom = 470.000000000000000000
+        end>
+      PressedLink = <
+        item
+          SourceRect.Left = 188.000000000000000000
+          SourceRect.Top = 223.000000000000000000
+          SourceRect.Right = 197.000000000000000000
+          SourceRect.Bottom = 234.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 283.000000000000000000
+          SourceRect.Top = 335.000000000000000000
+          SourceRect.Right = 296.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 376.000000000000000000
+          SourceRect.Top = 446.000000000000000000
+          SourceRect.Right = 394.000000000000000000
+          SourceRect.Bottom = 468.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'vscrollbarscrollbartopbutton1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 185.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 201.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 277.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 301.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 370.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 402.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 203.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 219.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 304.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 328.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 406.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 438.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+    object TButtonStyleObject
+      Align = Center
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 11.000000000000000000
+      Size.Height = 9.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+      HotLink = <
+        item
+          SourceRect.Left = 148.000000000000000000
+          SourceRect.Top = 225.000000000000000000
+          SourceRect.Right = 159.000000000000000000
+          SourceRect.Bottom = 234.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 220.000000000000000000
+          SourceRect.Top = 338.000000000000000000
+          SourceRect.Right = 236.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 296.000000000000000000
+          SourceRect.Top = 449.000000000000000000
+          SourceRect.Right = 318.000000000000000000
+          SourceRect.Bottom = 467.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          SourceRect.Left = 148.000000000000000000
+          SourceRect.Top = 225.000000000000000000
+          SourceRect.Right = 159.000000000000000000
+          SourceRect.Bottom = 234.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 220.000000000000000000
+          SourceRect.Top = 338.000000000000000000
+          SourceRect.Right = 236.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 296.000000000000000000
+          SourceRect.Top = 449.000000000000000000
+          SourceRect.Right = 318.000000000000000000
+          SourceRect.Bottom = 467.000000000000000000
+        end>
+      NormalLink = <
+        item
+          SourceRect.Left = 148.000000000000000000
+          SourceRect.Top = 225.000000000000000000
+          SourceRect.Right = 159.000000000000000000
+          SourceRect.Bottom = 234.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 220.000000000000000000
+          SourceRect.Top = 338.000000000000000000
+          SourceRect.Right = 236.000000000000000000
+          SourceRect.Bottom = 351.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 296.000000000000000000
+          SourceRect.Top = 449.000000000000000000
+          SourceRect.Right = 318.000000000000000000
+          SourceRect.Bottom = 467.000000000000000000
+        end>
+      PressedLink = <
+        item
+          SourceRect.Left = 147.000000000000000000
+          SourceRect.Top = 238.000000000000000000
+          SourceRect.Right = 158.000000000000000000
+          SourceRect.Bottom = 248.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 220.000000000000000000
+          SourceRect.Top = 356.000000000000000000
+          SourceRect.Right = 236.000000000000000000
+          SourceRect.Bottom = 369.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 294.000000000000000000
+          SourceRect.Top = 475.000000000000000000
+          SourceRect.Right = 316.000000000000000000
+          SourceRect.Bottom = 495.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'vscrollbarscrollbarbottombutton1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 185.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 201.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 277.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 301.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 370.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 402.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 167.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 183.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 250.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 274.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 334.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 366.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 203.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 219.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 304.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 328.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 406.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 438.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+    object TButtonStyleObject
+      Align = Center
+      SourceLookup = 'Windows 10 Desktopstyle.png'
+      Size.Width = 11.000000000000000000
+      Size.Height = 9.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Center
+      HotLink = <
+        item
+          SourceRect.Left = 165.000000000000000000
+          SourceRect.Top = 228.000000000000000000
+          SourceRect.Right = 176.000000000000000000
+          SourceRect.Bottom = 237.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 247.000000000000000000
+          SourceRect.Top = 342.000000000000000000
+          SourceRect.Right = 263.000000000000000000
+          SourceRect.Bottom = 355.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 330.000000000000000000
+          SourceRect.Top = 457.000000000000000000
+          SourceRect.Right = 352.000000000000000000
+          SourceRect.Bottom = 475.000000000000000000
+        end>
+      FocusedLink = <
+        item
+          SourceRect.Left = 165.000000000000000000
+          SourceRect.Top = 228.000000000000000000
+          SourceRect.Right = 176.000000000000000000
+          SourceRect.Bottom = 237.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 247.000000000000000000
+          SourceRect.Top = 342.000000000000000000
+          SourceRect.Right = 263.000000000000000000
+          SourceRect.Bottom = 355.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 330.000000000000000000
+          SourceRect.Top = 457.000000000000000000
+          SourceRect.Right = 352.000000000000000000
+          SourceRect.Bottom = 475.000000000000000000
+        end>
+      NormalLink = <
+        item
+          SourceRect.Left = 165.000000000000000000
+          SourceRect.Top = 228.000000000000000000
+          SourceRect.Right = 176.000000000000000000
+          SourceRect.Bottom = 237.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 247.000000000000000000
+          SourceRect.Top = 342.000000000000000000
+          SourceRect.Right = 263.000000000000000000
+          SourceRect.Bottom = 355.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 330.000000000000000000
+          SourceRect.Top = 457.000000000000000000
+          SourceRect.Right = 352.000000000000000000
+          SourceRect.Bottom = 475.000000000000000000
+        end>
+      PressedLink = <
+        item
+          SourceRect.Left = 165.000000000000000000
+          SourceRect.Top = 240.000000000000000000
+          SourceRect.Right = 176.000000000000000000
+          SourceRect.Bottom = 249.000000000000000000
+        end
+        item
+          Scale = 1.500000000000000000
+          SourceRect.Left = 247.000000000000000000
+          SourceRect.Top = 360.000000000000000000
+          SourceRect.Right = 263.000000000000000000
+          SourceRect.Bottom = 373.000000000000000000
+        end
+        item
+          Scale = 2.000000000000000000
+          SourceRect.Left = 330.000000000000000000
+          SourceRect.Top = 481.000000000000000000
+          SourceRect.Right = 352.000000000000000000
+          SourceRect.Bottom = 499.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+  end
+  object TStyleObject
+    StyleName = 'vscrollbarscrollbarhtrackstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    SourceLink = <
+      item
+        CapInsets.Left = 2.000000000000000000
+        CapInsets.Top = 2.000000000000000000
+        CapInsets.Right = 2.000000000000000000
+        CapInsets.Bottom = 2.000000000000000000
+        SourceRect.Left = 146.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 162.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 219.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 243.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 292.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 324.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Size.Width = 50.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'hthumbstyle'
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'htrackhthumbstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 165.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 181.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 247.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 271.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 330.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 362.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 147.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 163.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 220.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 244.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 294.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 326.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 147.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 163.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 220.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 244.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 294.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 326.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 183.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 199.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 274.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 298.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 366.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 398.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+  end
+  object TStyleObject
+    StyleName = 'vscrollbarscrollbarvtrackstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    SourceLink = <
+      item
+        CapInsets.Left = 2.000000000000000000
+        CapInsets.Top = 2.000000000000000000
+        CapInsets.Right = 2.000000000000000000
+        CapInsets.Bottom = 2.000000000000000000
+        SourceRect.Left = 146.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 162.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 219.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 243.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 292.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 324.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Size.Width = 16.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'vthumbstyle'
+    end
+  end
+  object TButtonStyleObject
+    StyleName = 'vtrackvthumbstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    HotLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 165.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 181.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 247.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 271.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 330.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 362.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    FocusedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 147.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 163.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 220.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 244.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 294.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 326.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    NormalLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 147.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 163.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 220.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 244.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 294.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 326.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    PressedLink = <
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        SourceRect.Left = 183.000000000000000000
+        SourceRect.Top = 199.000000000000000000
+        SourceRect.Right = 199.000000000000000000
+        SourceRect.Bottom = 215.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 274.000000000000000000
+        SourceRect.Top = 298.000000000000000000
+        SourceRect.Right = 298.000000000000000000
+        SourceRect.Bottom = 322.000000000000000000
+      end
+      item
+        CapInsets.Left = 6.000000000000000000
+        CapInsets.Top = 6.000000000000000000
+        CapInsets.Right = 6.000000000000000000
+        CapInsets.Bottom = 6.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 366.000000000000000000
+        SourceRect.Top = 398.000000000000000000
+        SourceRect.Right = 398.000000000000000000
+        SourceRect.Bottom = 430.000000000000000000
+      end>
+    TouchAnimation.Link = <>
+  end
+  object TLayout
+    StyleName = 'Grid1Style1SmallScrollBarStyle1'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 66
+    object TTrack
+      StyleName = 'htrack'
+      Align = Client
+      Locked = True
+      Orientation = Horizontal
+      Size.Width = 612.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarhtrackstyle'
+    end
+    object TTrack
+      StyleName = 'vtrack'
+      Align = Client
+      Locked = True
+      Orientation = Horizontal
+      Size.Width = 612.000000000000000000
+      Size.Height = 152.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'scrollbarvtrackstyle'
+    end
+  end
+  object TStyleObject
+    StyleName = 'vsmallscrollbarscrollbarhtrackstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    SourceLink = <
+      item
+        CapInsets.Left = 2.000000000000000000
+        CapInsets.Top = 2.000000000000000000
+        CapInsets.Right = 2.000000000000000000
+        CapInsets.Bottom = 2.000000000000000000
+        SourceRect.Left = 146.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 162.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 219.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 243.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 292.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 324.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Size.Width = 50.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'hthumbstyle'
+    end
+  end
+  object TStyleObject
+    StyleName = 'vsmallscrollbarscrollbarvtrackstyle1'
+    SourceLookup = 'Windows 10 Desktopstyle.png'
+    Size.Width = 612.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    SourceLink = <
+      item
+        CapInsets.Left = 2.000000000000000000
+        CapInsets.Top = 2.000000000000000000
+        CapInsets.Right = 2.000000000000000000
+        CapInsets.Bottom = 2.000000000000000000
+        SourceRect.Left = 146.000000000000000000
+        SourceRect.Top = 180.000000000000000000
+        SourceRect.Right = 162.000000000000000000
+        SourceRect.Bottom = 196.000000000000000000
+      end
+      item
+        CapInsets.Left = 3.000000000000000000
+        CapInsets.Top = 3.000000000000000000
+        CapInsets.Right = 3.000000000000000000
+        CapInsets.Bottom = 3.000000000000000000
+        Scale = 1.500000000000000000
+        SourceRect.Left = 219.000000000000000000
+        SourceRect.Top = 270.000000000000000000
+        SourceRect.Right = 243.000000000000000000
+        SourceRect.Bottom = 294.000000000000000000
+      end
+      item
+        CapInsets.Left = 4.000000000000000000
+        CapInsets.Top = 4.000000000000000000
+        CapInsets.Right = 4.000000000000000000
+        CapInsets.Bottom = 4.000000000000000000
+        Scale = 2.000000000000000000
+        SourceRect.Left = 292.000000000000000000
+        SourceRect.Top = 360.000000000000000000
+        SourceRect.Right = 324.000000000000000000
+        SourceRect.Bottom = 392.000000000000000000
+      end>
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Size.Width = 16.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'vthumbstyle'
+    end
+  end
+end

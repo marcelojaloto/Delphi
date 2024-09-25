@@ -1,0 +1,51 @@
+package Jaloto_CEP_ComponenteRT;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Jaloto CEP - Runtime'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  RESTComponents,
+  xmlrtl;
+
+contains
+  Jaloto.CEP in 'Jaloto.CEP.pas',
+  Jaloto.CEP.Dados in 'Jaloto.CEP.Dados.pas',
+  Jaloto.CEP.Interfaces in 'Jaloto.CEP.Interfaces.pas',
+  Jaloto.CEP.DadosOnlineJson in 'Jaloto.CEP.DadosOnlineJson.pas',
+  Jaloto.CEP.DadosOnlineXml in 'Jaloto.CEP.DadosOnlineXml.pas',
+  Jaloto.CEP.DadosFactory in 'Jaloto.CEP.DadosFactory.pas',
+  Jaloto.CEP.ViaCEP in 'Jaloto.CEP.ViaCEP.pas',
+  Jaloto.CEP.Comum in 'Jaloto.CEP.Comum.pas',
+  Jaloto.CEP.DadosOnline in 'Jaloto.CEP.DadosOnline.pas';
+
+end.
