@@ -10,10 +10,7 @@ Este exemplo tem por objetivo principal criar um componente Delphi 12.1 CE (Fire
 ## Contatos:
 
 E-mail: [**marcelojaloto@gmail.com**](mailto:marcelojaloto@gmail.com) 
-
 <br>
-<br>
-
 Linkedin: [**https://www.linkedin.com/in/marcelojaloto**](https://www.linkedin.com/in/marcelojaloto/) 
 
 ## Requisitos técnicos:
