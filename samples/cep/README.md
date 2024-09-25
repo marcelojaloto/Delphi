@@ -43,18 +43,18 @@ https://sbp.enterprisedb.com/getfile.jsp?fileid=1258893
 
 - Crie um banco de dados com o nome "cep"
 
-´´´
+
 CREATE DATABASE cep
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
     CONNECTION LIMIT = -1
     IS_TEMPLATE = False;
-´´´
+
 
 - Em seguida, execute o script abaixo no banco de dados "cep":
 
-´´´
+
 CREATE TABLE public.enderecos
 (
     codigo uuid NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE public.enderecos
 
 ALTER TABLE IF EXISTS public.enderecos
     OWNER to postgres;
-´´´
+
 
 b) Confira se está na pasta de deploy as DLLs necessárias para acesso ao banco de dados Postgre SQL
 
@@ -83,10 +83,10 @@ c) Confira se está na pasta de deploy as DLLs necessárias para uso do protocol
 
 - .\Output\Deploy\Win64\
 
-´´´
+
 libeay32.dll
 ssleay32.dll
-´´´
+
 	
 d) Instalação do componente TCEP
 
