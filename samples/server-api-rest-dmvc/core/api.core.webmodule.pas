@@ -56,8 +56,9 @@ uses
   MVCFramework.Middleware.CORS,
   MVCFramework.Middleware.StaticFiles, 
   MVCFramework.Middleware.Compression,
+  MVCFramework.Swagger.Commons,
   MVCFramework.Middleware.Swagger,
-  MVCFramework.SQLGenerators.PostgreSQL, // caso não adicionar essa unit não registra o banco de dados postgree no ORM active records
+  MVCFramework.SQLGenerators.PostgreSQL, // caso nï¿½o adicionar essa unit nï¿½o registra o banco de dados postgree no ORM active records
   MVCFramework.Middleware.ActiveRecord,
   MVCFramework.Controllers.Register,
   api.core.common,
@@ -105,11 +106,13 @@ begin
     '.\www', // www root folder
     'index.html')); // Define a default URL for requests that don't map to a route or a file (useful for client side web app)
 
-  // Adds support to swagger REST API documentation
+  // Adds support to OpenAPI 3 REST API documentation
   FMVC.AddMiddleware(TMVCSwaggerMiddleware.Create(FMVC,
     TApiDocumentation.GetHeaderInformation('v1.0.0'),
     '/api/help/swagger.json',
-    'Authentication JWT'));
+    'Authentication JWT',
+    False,
+    ssvOpenAPI3));
 
   // To enable compression (deflate, gzip) just add this middleware as the last one
   FMVC.AddMiddleware(TMVCCompressionMiddleware.Create);

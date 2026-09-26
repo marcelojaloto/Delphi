@@ -76,9 +76,9 @@ begin
   Writeln(' Database Postgres drivers folder:');
   Writeln(' ' + ExtractFilePath(ParamStr(0)) + 'db\lib');
   Writeln(' ');
-  Writeln(' SwagDoc - version 1.0.0');
-  Writeln(' Swagger REST API Documentation - version 2.0');
-  Writeln(' Swagger UI deploy folder:');
+  Writeln(' SwagDoc - version with OpenAPI 3 support');
+  Writeln(' REST API Documentation - OpenAPI 3.2.1');
+  Writeln(' Swagger UI 5 deploy folder:');
   Writeln(' ' + ExtractFilePath(ParamStr(0)) + 'www\api\help');
   Writeln(' ');
   Writeln(' Command to starts in other server API port:');

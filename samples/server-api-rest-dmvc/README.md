@@ -17,10 +17,30 @@
  Database Postgres drivers folder:
  .\deploy\db\lib
  
- SwagDoc - version 1.0.0
- Swagger REST API Documentation - version 2.0
- Swagger UI deploy folder:
+ SwagDoc - version with OpenAPI 3 support
+ REST API Documentation - OpenAPI 3.2.1
+ Swagger UI 5 deploy folder:
  .\deploy\www\api\help
+
+## OpenAPI 3 documentation
+
+The document published at `/api/help/swagger.json` is written as OpenAPI 3.2.1. The web module asks the
+Swagger middleware for it:
+
+```delphi
+FMVC.AddMiddleware(TMVCSwaggerMiddleware.Create(FMVC,
+  TApiDocumentation.GetHeaderInformation('v1.0.0'),
+  '/api/help/swagger.json',
+  'Authentication JWT',
+  False,
+  ssvOpenAPI3));
+```
+
+DelphiMVCFramework 3.5 publishes the document with that parameter, which defaults to `ssvSwagger2`. This sample
+keeps the copy of the framework it was written for, version 3.2.0 (boron), so the parameter and the bundled
+SwagDoc were backported into `components\dmvc`: the middleware asks SwagDoc for the OpenAPI 3 document and
+declares the token as an HTTP bearer scheme, which lets the Authorize dialog of Swagger UI take the raw token.
+The attributes of the controllers did not change.
  
  Command to starts in other server API port:
  ServerRestAPI start 8088

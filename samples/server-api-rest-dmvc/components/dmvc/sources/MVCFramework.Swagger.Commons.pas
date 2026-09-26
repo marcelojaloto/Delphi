@@ -7,7 +7,7 @@
 // https://github.com/danieleteti/delphimvcframework
 //
 // Collaborators on this file:
-// João Antônio Duarte (https://github.com/joaoduarte19)
+// Joï¿½o Antï¿½nio Duarte (https://github.com/joaoduarte19)
 //
 // ***************************************************************************
 //
@@ -51,6 +51,9 @@ type
   TMVCSwagSchemaType = (stUnknown, stInteger, stInt64, stNumber, stDateTime, stDate, stTime, stEnumeration, stBoolean,
     stObject, stArray, stString, stChar, stGuid);
   TMVCSwagAuthenticationType = (atBasic, atJsonWebToken);
+  // Backported from DelphiMVCFramework 3.5, where the Swagger middleware writes the document
+  // as Swagger 2.0 or as OpenAPI 3 according to this type.
+  TMVCSwaggerSpecVersion = (ssvSwagger2, ssvOpenAPI3);
 
   /// <summary>
   /// Swagger info object

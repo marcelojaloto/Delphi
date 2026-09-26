@@ -7,7 +7,7 @@
 // https://github.com/danieleteti/delphimvcframework
 //
 // Collaborators on this file:
-// João Antônio Duarte (https://github.com/joaoduarte19)
+// Joï¿½o Antï¿½nio Duarte (https://github.com/joaoduarte19)
 //
 // ***************************************************************************
 //
@@ -45,6 +45,7 @@ type
     fSwagDocURL: string;
     fJWTDescription: string;
     fEnableBasicAuthentication: Boolean;
+    fSpecVersion: TMVCSwaggerSpecVersion;
     procedure DocumentApiInfo(const ASwagDoc: TSwagDoc);
     procedure DocumentApiSettings(AContext: TWebContext; ASwagDoc: TSwagDoc);
     procedure DocumentApiAuthentication(const ASwagDoc: TSwagDoc);
@@ -54,7 +55,8 @@ type
   public
     constructor Create(const AEngine: TMVCEngine; const ASwaggerInfo: TMVCSwaggerInfo;
       const ASwaggerDocumentationURL: string = '/swagger.json'; const AJWTDescription: string = JWT_DEFAULT_DESCRIPTION;
-      const AEnableBasicAuthentication: Boolean = False);
+      const AEnableBasicAuthentication: Boolean = False;
+      const ASpecVersion: TMVCSwaggerSpecVersion = ssvSwagger2);
     destructor Destroy; override;
     procedure OnBeforeRouting(AContext: TWebContext; var AHandled: Boolean);
     procedure OnBeforeControllerAction(AContext: TWebContext; const AControllerQualifiedClassName: string;
@@ -77,6 +79,7 @@ uses
   MVCFramework.Middleware.JWT,
   Swag.Doc.Path.Operation.RequestParameter,
   Swag.Doc.SecurityDefinitionApiKey,
+  Swag.Doc.SecurityDefinitionHttp,
   Swag.Doc.SecurityDefinitionBasic,
   Swag.Doc.Definition,
   System.Generics.Collections,
@@ -85,7 +88,8 @@ uses
 { TMVCSwaggerMiddleware }
 
 constructor TMVCSwaggerMiddleware.Create(const AEngine: TMVCEngine; const ASwaggerInfo: TMVCSwaggerInfo;
-  const ASwaggerDocumentationURL, AJWTDescription: string; const AEnableBasicAuthentication: Boolean);
+  const ASwaggerDocumentationURL, AJWTDescription: string; const AEnableBasicAuthentication: Boolean;
+  const ASpecVersion: TMVCSwaggerSpecVersion);
 begin
   inherited Create;
   fSwagDocURL := ASwaggerDocumentationURL;
@@ -93,6 +97,7 @@ begin
   fSwaggerInfo := ASwaggerInfo;
   fJWTDescription := AJWTDescription;
   fEnableBasicAuthentication := AEnableBasicAuthentication;
+  fSpecVersion := ASpecVersion;
 end;
 
 destructor TMVCSwaggerMiddleware.Destroy;
@@ -228,7 +233,7 @@ var
   lObjType: TRttiType;
   lJwtUrlField: TRttiField;
   lJwtUrlSegment: string;
-  lSecurityDefsBearer: TSwagSecurityDefinitionApiKey;
+  lSecurityDefsBearer: TSwagSecurityDefinition;
   lSecurityDefsBasic: TSwagSecurityDefinitionBasic;
 begin
   lJWTMiddleware := nil;
@@ -268,10 +273,22 @@ begin
           lJWTMiddleware.UserNameHeaderName, lJWTMiddleware.PasswordHeaderName));
 
         // Methods that have the MVCRequiresAuthentication attribute use bearer authentication.
-        lSecurityDefsBearer := TSwagSecurityDefinitionApiKey.Create;
+        // OpenAPI 3 has a real bearer scheme, so Swagger UI takes the raw token and sends
+        // "Authorization: Bearer <token>". Swagger 2.0 has none, and there the scheme stays an
+        // API key sent in the Authorization header, where the typed value includes "Bearer ".
+        if fSpecVersion = ssvOpenAPI3 then
+        begin
+          lSecurityDefsBearer := TSwagSecurityDefinitionHttp.Create;
+          TSwagSecurityDefinitionHttp(lSecurityDefsBearer).Scheme := 'bearer';
+          TSwagSecurityDefinitionHttp(lSecurityDefsBearer).BearerFormat := 'JWT';
+        end
+        else
+        begin
+          lSecurityDefsBearer := TSwagSecurityDefinitionApiKey.Create;
+          TSwagSecurityDefinitionApiKey(lSecurityDefsBearer).InLocation := kilHeader;
+          TSwagSecurityDefinitionApiKey(lSecurityDefsBearer).Name := 'Authorization';
+        end;
         lSecurityDefsBearer.SchemeName := SECURITY_BEARER_NAME;
-        lSecurityDefsBearer.InLocation := kilHeader;
-        lSecurityDefsBearer.Name := 'Authorization';
         lSecurityDefsBearer.Description := fJWTDescription;
         ASwagDoc.SecurityDefinitions.Add(lSecurityDefsBearer);
       end;
@@ -334,6 +351,9 @@ begin
   begin
     LSwagDoc := TSwagDoc.Create;
     try
+      if fSpecVersion = ssvOpenAPI3 then
+        LSwagDoc.SpecVersion := svOpenApi3;
+
       DocumentApiInfo(LSwagDoc);
       DocumentApiSettings(AContext, LSwagDoc);
       DocumentApiAuthentication(LSwagDoc);
