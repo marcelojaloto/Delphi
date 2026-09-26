@@ -10,9 +10,10 @@ uses
   Horse.CORS,
   Horse.Jhonson,
   Horse.HandleException,
-  Horse.GBSwagger,
+  Horse.SwagDoc,
   Horse.JWT,
   Tasks.Server.Core.Documentation in 'Tasks.Server.Core.Documentation.pas',
+  Tasks.Server.Core.Routes in 'Tasks.Server.Core.Routes.pas',
   Tasks.Server.Core.Database in 'Tasks.Server.Core.Database.pas',
   Tasks.Server.Model.Task in 'Tasks.Server.Model.Task.pas',
   Tasks.Server.Controler.Task in 'Tasks.Server.Controler.Task.pas',
@@ -30,11 +31,20 @@ begin
 
   var DataBase := TDatabaseFactory.Create.CreateDatabaseFactory(dbPostgresSQL);
 
+  // The routes are documented by the TApiDocumentation class, so the discovery of the registered routes is
+  // not needed here.
+  SwagDocConfig.DiscoverRoutes := False;
+  SwagDocConfig.UserInterfaceRoute := '/api/help';
+  SwagDocConfig.DocumentRoute := '/api/help/openapi.json';
+
   THorse
     .Use(CORS)
     .Use(Jhonson)
     .Use(HandleException)
-    .Use(HorseSwagger('api/help'));
+    .Use(HorseSwagDoc);
+
+  TApiRoutes.RegisterRoutes;
+  TApiDocumentation.DocumentApi(SwagDocApi);
 
   THorse.Listen(9000,
     procedure

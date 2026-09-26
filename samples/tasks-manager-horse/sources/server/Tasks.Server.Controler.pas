@@ -14,6 +14,10 @@ uses
   Horse;
 
 type
+  TController = class;
+
+  TControllerAction = reference to procedure(Controller: TController);
+
   TController = class(TObject)
   strict private
     FBody: TJsonValue;
@@ -24,8 +28,11 @@ type
     function GetBody: TJsonValue; overload;
     function GetBody<T: class, constructor>: T; overload;
   public
-    constructor Create(Request: THorseRequest; Response: THorseResponse);
+    constructor Create(Request: THorseRequest; Response: THorseResponse); virtual;
     destructor Destroy; override;
+
+    // Creates the controller of the route, runs the action that answers it and destroys the controller.
+    class procedure Execute(Request: THorseRequest; Response: THorseResponse; const Action: TControllerAction);
   end;
 
 implementation
@@ -48,6 +55,19 @@ begin
   if Assigned(FBody) then
     FBody.Free;
   inherited Destroy;
+end;
+
+class procedure TController.Execute(Request: THorseRequest; Response: THorseResponse;
+  const Action: TControllerAction);
+var
+  Controller: TController;
+begin
+  Controller := Self.Create(Request, Response);
+  try
+    Action(Controller);
+  finally
+    Controller.Free;
+  end;
 end;
 
 function TController.GetBody: TJsonValue;

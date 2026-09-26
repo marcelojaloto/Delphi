@@ -12,57 +12,23 @@ interface
 uses
   Horse,
   Horse.Commons,
-  GBSwagger.Path.Attributes,
 
   Tasks.Server.Controler,
   Tasks.Server.Model.Task;
 
 type
-  [SwagPath('tasks', 'Tasks')]
   TTaskController = class(TController)
   public
-    [SwagGET('List of all tasks')]
-    [SwagParamQuery('list_all', 'Lists entire the tasks. Uses true or false.', False, False)]
-    [SwagParamQuery('count', 'Gets the total number of tasks. Uses true or false.', False, False)]
-    [SwagParamQuery('average_pending', 'Gets the average priority of pending tasks. Uses true or false.', False, False)]
-    [SwagParamQuery('count_done_last_7days', 'Gets the number of tasks done in the last 7 days. Uses true or false.', False, False)]
-    //[SwagResponse(THTTPStatus.OK, TTaskModel, 'Task list', True)]
-    [SwagResponse(200, TTaskListResponse, 'Task list', False)]
     procedure List;
 
-    [SwagGET('{id}', 'Get data for a specific task')]
-    [SwagParamPath('id', 'Task Id')]
-    [SwagResponse(200, TTaskModel, 'Task data')]
-    [SwagResponse(404)]
     procedure ListById;
 
-    [SwagPOST('Create a new task')]
-    [SwagParamBody('Task data', TTaskModel)]
-    [SwagResponse(201, TTaskModel)]
-    [SwagResponse(400)]
     procedure Insert;
 
-    [SwagPUT('{id}', 'Change data for a specific task')]
-    [SwagParamPath('id', 'Task Id')]
-    [SwagParamBody('Task data', TTaskModel)]
-    [SwagResponse(204)]
-    [SwagResponse(400)]
-    [SwagResponse(404)]
     procedure Update;
 
-    [SwagPATCH('{id}/status', 'Change task status for a specific task')]
-    [SwagParamPath('id', 'Task Id')]
-    [SwagParamBody('Task data', TTaskStatusModel)]
-    [SwagResponse(204)]
-    [SwagResponse(400)]
-    [SwagResponse(404)]
     procedure UpdateStatus;
 
-    [SwagDELETE('{id}', 'Delete task')]
-    [SwagParamPath('id', 'Task Id')]
-    [SwagResponse(204)]
-    [SwagResponse(400)]
-    [SwagResponse(404)]
     procedure Delete;
   end;
 
@@ -70,7 +36,6 @@ implementation
 
 uses
   System.JSON,
-  Horse.GBSwagger,
   Tasks.Server.Core.Helpers;
 
 { TTaskController }
@@ -124,7 +89,5 @@ begin
   FResponse.Status(THTTPStatus.NoContent);
 end;
 
-initialization
-  THorseGBSwaggerRegister.RegisterPath(TTaskController);
 
 end.

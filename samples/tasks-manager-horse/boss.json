@@ -6,7 +6,7 @@
 	"mainsrc": "./src",
 	"projects": [],
 	"dependencies": {
-		"github.com/gabrielbaltazar/gbswagger": "^3.0.7",
+		"github.com/marcelojaloto/SwagDoc": "^2.0.0",
 		"github.com/hashload/handle-exception": "^0.1.9",
 		"github.com/hashload/horse": "^3.1.6",
 		"github.com/hashload/horse-cors": "^1.0.6",

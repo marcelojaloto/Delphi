@@ -11,20 +11,12 @@ interface
 
 uses
   Horse,
-  Horse.GBSwagger.Register,
-  GBSwagger.Path.Attributes,
-  GBSwagger.Path.Registry,
   Tasks.Server.Controler,
   Tasks.Server.Model.Authentication;
 
 type
-  [SwagPath('Authentication')]
   TLoginController = class(TController)
   public
-    [SwagPOST('login', 'Genarates authetication token', True)]
-    [SwagParamBody('credential', TCredentialModel)]
-    [SwagResponse(200, TTokenModel)]
-    [SwagResponse(400)]
     procedure Login;
   end;
 
@@ -33,8 +25,7 @@ implementation
 uses
   System.SysUtils,
   System.JSON,
-  REST.Json,
-  Horse.GBSwagger;
+  REST.Json;
 
 { TLoginController }
 
@@ -53,7 +44,5 @@ begin
   end;
 end;
 
-initialization
-  THorseGBSwaggerRegister.RegisterPath(TLoginController);
 
 end.

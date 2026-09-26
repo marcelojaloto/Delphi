@@ -85,7 +85,7 @@
         <DCC_K>false</DCC_K>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>tasks_server</SanitizedProjectName>
-        <DCC_UnitSearchPath>..\..\modules\horse\src;..\..\modules\gbswagger\Source\Horse;..\..\modules\gbswagger\Source\Core;..\..\modules\gbswagger\Source\Validator;..\..\modules\horse-cors\src;..\..\modules\jhonson\src;..\..\modules\horse-jwt\src;..\..\modules\delphi-jose-jwt\Source\JOSE;..\..\modules\delphi-jose-jwt\Source\Common;..\..\modules\dataset-serialize\src;..\..\modules\handle-exception\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>..\..\modules\horse\src;..\..\modules\SwagDoc\Source;..\..\modules\SwagDoc\Integrations\Horse\Source;..\..\modules\horse-cors\src;..\..\modules\jhonson\src;..\..\modules\horse-jwt\src;..\..\modules\delphi-jose-jwt\Source\JOSE;..\..\modules\delphi-jose-jwt\Source\Common;..\..\modules\dataset-serialize\src;..\..\modules\handle-exception\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <VerInfo_Locale>1046</VerInfo_Locale>
         <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
     </PropertyGroup>
@@ -190,6 +190,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="Tasks.Server.Core.Documentation.pas"/>
+        <DCCReference Include="Tasks.Server.Core.Routes.pas"/>
         <DCCReference Include="Tasks.Server.Core.Database.pas"/>
         <DCCReference Include="Tasks.Server.Model.Task.pas"/>
         <DCCReference Include="Tasks.Server.Controler.Task.pas"/>

@@ -11,7 +11,6 @@ interface
 
 uses
   System.JSON,
-  gbswagger.model.attributes,
   Tasks.Server.Model;
 
 type
@@ -32,9 +31,7 @@ type
     FUsername: String;
     FPassword: String;
   public
-    [SwagProp(True)]
     property Username: String read FUsername write FUsername;
-    [SwagProp(True)]
     property Password: String read FPassword write FPassword;
   end;
 

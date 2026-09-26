@@ -24,7 +24,8 @@ e) PostgreSQL Database for storing task data and for SQL queries in the service 
 
 f) Details:
 - Use of the Horse framework;
-- Swagger documentation;
+- OpenAPI 3.2.1 documentation, written with [SwagDoc](https://github.com/marcelojaloto/SwagDoc) and published
+  by its middleware for Horse;
 - Use of Factory Methos or Abtract Factory Design Patterns;
 - Security in communication between the service and the application was used JWT.
 
@@ -112,7 +113,11 @@ http://127.0.0.1:9000
 ![image](https://github.com/marcelojaloto/Delphi/assets/20048296/d517a642-5862-403f-a743-c5e380d34384)
 
 
-c) API documentation in Swagger
+c) API documentation in OpenAPI 3
+
+The document is written with SwagDoc by the `Tasks.Server.Core.Documentation` unit and published by the
+middleware for Horse, which also renders it with Swagger UI. The routes are registered by the
+`Tasks.Server.Core.Routes` unit.
 
 ![image](https://github.com/marcelojaloto/Delphi/assets/20048296/1ff526b8-5900-448e-b217-baf04b90aae4)
 
@@ -120,6 +125,11 @@ c) API documentation in Swagger
 - With an operational server, access the address below:
   
 http://127.0.0.1:9000/api/help
+
+The generated document is published at http://127.0.0.1:9000/api/help/openapi.json. Earlier releases of this
+sample documented the API with GBSwagger, which writes a Swagger 2.0 document; the
+[migration guide](https://github.com/marcelojaloto/SwagDoc/blob/master/Integrations/Horse/Migration-gbswagger-to-SwagDoc.md)
+describes every step of the change.
 
 - Authenticate using the admin username and admin password;
 - Copy the token code;

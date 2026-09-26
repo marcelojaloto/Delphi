@@ -13,7 +13,6 @@ uses
   System.JSON,
   System.Generics.Collections,
   FireDAC.Comp.Client,
-  GBSwagger.Model.Attributes,
   Tasks.Server.Model;
 
 type
@@ -25,8 +24,6 @@ type
   strict private
     FStatus: TTaskStatus;
   public
-    [SwagNumber(0, 2)]
-    [SwagProp('status', 'Task status', True, False)]
     property Status: TTaskStatus read FStatus write FStatus;
   end;
 
@@ -40,30 +37,18 @@ type
     FStatus: TTaskStatus;
     FPriority: TTaskPriority;
   public
-    [SwagString(36, 36)]
-    [SwagProp('id', 'Task identification code', True, True)]
     property Id: String read FId write FId;
 
-    [SwagString(100)]
-    [SwagProp('title', 'Task title description', True, False)]
     property Title: String read FTitle write FTitle;
 
-    [SwagString(1000)]
-    [SwagProp('notes', 'Task notes descriptions', False, False)]
     property Notes: String read FNotes write FNotes;
 
-    [SwagProp('createdDate', 'Task created date', False, True)]
     property CreatedDate: TDatetime read FCreatedDate write FCreatedDate;
 
-    [SwagProp('endDate', 'Task end date', False, True)]
     property EndDate: TDateTime read FEndDate write FEndDate;
 
-    [SwagNumber(0, 2)]
-    [SwagProp('status', 'Task status', True, False)]
     property Status: TTaskStatus read FStatus write FStatus;
 
-    [SwagNumber(0, 4)]
-    [SwagProp('priority', 'Task priority', True, False)]
     property Priority: TTaskPriority read FPriority write FPriority;
   end;
 
@@ -74,16 +59,12 @@ type
     FAveragePending: Extended;
     FCountDoneLast7days: Int64;
   public
-    [SwagProp('list', 'Result with entire task list.', False)]
     property List: TObjectList<TTaskModel> read FList;
 
-    [SwagProp('count', 'Result with the total number of tasks.', False)]
     property Count: Int64 read FCount;
 
-    [SwagProp('averagePending', 'Result with the average priority of pending tasks.', False)]
     property AveragePending: Extended read FAveragePending;
 
-    [SwagProp('countDoneLast7days', 'Result with the number of tasks done in the last 7 days.', False)]
     property CountDoneLast7days: Int64 read FCountDoneLast7days;
   end;
 
