@@ -1,0 +1,11 @@
+{
+	"name": "products",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./sources",
+	"projects": [],
+	"dependencies": {
+		"github.com/marcelojaloto/SwagDoc": "^2.1.0"
+	}
+}
